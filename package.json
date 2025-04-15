@@ -2,9 +2,10 @@
   "name": "@nxfresh/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
   "private": true,
+  "type": "module",
   "dependencies": {
+    "@storybook/test": "^8.6.12",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-router-dom": "6.29.0"
@@ -20,11 +21,15 @@
     "@nx/js": "20.8.0",
     "@nx/playwright": "20.8.0",
     "@nx/react": "20.8.0",
+    "@nx/storybook": "^20.8.0",
     "@nx/web": "20.8.0",
     "@nx/webpack": "20.8.0",
     "@nx/workspace": "20.8.0",
     "@playwright/test": "^1.36.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "@storybook/addon-essentials": "^8.6.11",
+    "@storybook/core-server": "^8.6.11",
+    "@storybook/react-webpack5": "^8.6.11",
     "@svgr/webpack": "^8.0.1",
     "@swc-node/register": "~1.9.1",
     "@swc/cli": "~0.6.0",
@@ -43,12 +48,16 @@
     "nx": "20.8.0",
     "prettier": "^2.6.2",
     "react-refresh": "^0.10.0",
+    "storybook": "^8.6.11",
+    "ts-node": "10.9.1",
     "tslib": "^2.3.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.19.0",
     "webpack-cli": "^5.1.4"
   },
   "workspaces": [
-    "apps/*"
-  ]
+    "apps/*",
+    "libs/*"
+  ],
+  "packageManager": "yarn@4.9.1+sha512.f95ce356460e05be48d66401c1ae64ef84d163dd689964962c6888a9810865e39097a5e9de748876c2e0bf89b232d583c33982773e9903ae7a76257270986538"
 }
